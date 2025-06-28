@@ -1,0 +1,915 @@
+Academic exam 
+List api: 
+Url: http://localhost:3000/api/v1/student/academic-exam?limit=&search=
+Method: GET
+response: 
+{
+    "success": true,
+    "total": 1,
+    "data": [
+        {
+            "id": 11,
+            "exam_name": "sample-1",
+            "exam_start_date": "2025-05-02",
+            "exam_end_date": "2025-05-05",
+            "is_active": 1,
+            "created_by": 1,
+            "updated_by": 1,
+            "class_name": "1st std",
+            "section_name": "A"
+        }
+    ]
+}
+
+Save api: 
+Url: http://localhost:3000/api/v1/student/academic-exam/save
+Method: POST
+Request:
+{
+  "exam_name": "I-term",
+  "exam_start_date": "2025-06-02",
+  "exam_end_date": "2025-06-06",
+  "class_id": 1,
+  "section_id": 1,
+  "exam": [
+    {
+      "student_id": 1,
+      "total_mark": "500",
+      "total_mark_scored": "360",
+      "status": "pass",
+      "subject_mark": [
+        {
+          "subject_id": 1,
+          "total_mark": 100,
+          "mark_scored": 50,
+          "comments": ""
+        },
+        {
+          "subject_id": 2,
+          "total_mark": 100,
+          "mark_scored": 100,
+          "comments": ""
+        },
+        {
+          "subject_id": 3,
+          "total_mark": 100,
+          "mark_scored": 50,
+          "comments": ""
+        },
+        {
+          "subject_id": 4,
+          "total_mark": 100,
+          "mark_scored": 100,
+          "comments": ""
+        },
+        {
+          "subject_id": 5,
+          "total_mark": 100,
+          "mark_scored": 60,
+          "comments": ""
+        }
+      ]
+    },
+    {
+      "student_id": 2,
+      "total_mark": "500",
+      "total_mark_scored": "490",
+      "status": "pass",
+      "subject_mark": [
+        {
+          "subject_id": 1,
+          "total_mark": 100,
+          "mark_scored": 100,
+          "comments": ""
+        },
+        {
+          "subject_id": 2,
+          "total_mark": 100,
+          "mark_scored": 100,
+          "comments": ""
+        },
+        {
+          "subject_id": 3,
+          "total_mark": 100,
+          "mark_scored": 100,
+          "comments": ""
+        },
+        {
+          "subject_id": 4,
+          "total_mark": 100,
+          "mark_scored": 100,
+          "comments": ""
+        },
+        {
+          "subject_id": 5,
+          "total_mark": 100,
+          "mark_scored": 90,
+          "comments": ""
+        }
+      ]
+    },
+    {
+      "student_id": 3,
+      "total_mark": "500",
+      "total_mark_scored": "400",
+      "status": "pass",
+      "subject_mark": [
+        {
+          "subject_id": 1,
+          "total_mark": 100,
+          "mark_scored": 100,
+          "comments": ""
+        },
+        {
+          "subject_id": 2,
+          "total_mark": 100,
+          "mark_scored": 50,
+          "comments": ""
+        },
+        {
+          "subject_id": 3,
+          "total_mark": 100,
+          "mark_scored": 100,
+          "comments": ""
+        },
+        {
+          "subject_id": 4,
+          "total_mark": 100,
+          "mark_scored": 100,
+          "comments": ""
+        },
+        {
+          "subject_id": 5,
+          "total_mark": 100,
+          "mark_scored": 50,
+          "comments": ""
+        }
+      ]
+    },
+    {
+      "student_id": 4,
+      "total_mark": "500",
+      "total_mark_scored": "200",
+      "status": "pass",
+      "subject_mark": [
+        {
+          "subject_id": 1,
+          "total_mark": 100,
+          "mark_scored": 50,
+          "comments": ""
+        },
+        {
+          "subject_id": 2,
+          "total_mark": 100,
+          "mark_scored": 30,
+          "comments": ""
+        },
+        {
+          "subject_id": 3,
+          "total_mark": 100,
+          "mark_scored": 30,
+          "comments": ""
+        },
+        {
+          "subject_id": 4,
+          "total_mark": 100,
+          "mark_scored": 45,
+          "comments": ""
+        },
+        {
+          "subject_id": 5,
+          "total_mark": 100,
+          "mark_scored": 45,
+          "comments": ""
+        }
+      ]
+    }
+  ]
+}
+Response: 
+{
+    "success": true,
+    "message": "Student academic exam added successfully"
+}
+Update api: 
+Url: http://localhost:3000/student/academic-exam/update/11
+Method: POST
+Request:
+{
+  "exam_name": "I-term",
+  "exam_start_date": "2025-06-02",
+  "exam_end_date": "2025-06-06",
+  "class_id": 1,
+  "section_id": 1,
+  "exam": [
+    {
+      "student_id": 1,
+      "total_mark": "500",
+      "total_mark_scored": "360",
+      "status": "pass",
+      "subject_mark": [
+        {
+          "subject_id": 1,
+          "total_mark": 100,
+          "mark_scored": 50,
+          "comments": ""
+        },
+        {
+          "subject_id": 2,
+          "total_mark": 100,
+          "mark_scored": 100,
+          "comments": ""
+        },
+        {
+          "subject_id": 3,
+          "total_mark": 100,
+          "mark_scored": 50,
+          "comments": ""
+        },
+        {
+          "subject_id": 4,
+          "total_mark": 100,
+          "mark_scored": 100,
+          "comments": ""
+        },
+        {
+          "subject_id": 5,
+          "total_mark": 100,
+          "mark_scored": 60,
+          "comments": ""
+        }
+      ]
+    },
+    {
+      "student_id": 2,
+      "total_mark": "500",
+      "total_mark_scored": "490",
+      "status": "pass",
+      "subject_mark": [
+        {
+          "subject_id": 1,
+          "total_mark": 100,
+          "mark_scored": 100,
+          "comments": ""
+        },
+        {
+          "subject_id": 2,
+          "total_mark": 100,
+          "mark_scored": 100,
+          "comments": ""
+        },
+        {
+          "subject_id": 3,
+          "total_mark": 100,
+          "mark_scored": 100,
+          "comments": ""
+        },
+        {
+          "subject_id": 4,
+          "total_mark": 100,
+          "mark_scored": 100,
+          "comments": ""
+        },
+        {
+          "subject_id": 5,
+          "total_mark": 100,
+          "mark_scored": 90,
+          "comments": ""
+        }
+      ]
+    },
+    {
+      "student_id": 3,
+      "total_mark": "500",
+      "total_mark_scored": "400",
+      "status": "pass",
+      "subject_mark": [
+        {
+          "subject_id": 1,
+          "total_mark": 100,
+          "mark_scored": 100,
+          "comments": ""
+        },
+        {
+          "subject_id": 2,
+          "total_mark": 100,
+          "mark_scored": 50,
+          "comments": ""
+        },
+        {
+          "subject_id": 3,
+          "total_mark": 100,
+          "mark_scored": 100,
+          "comments": ""
+        },
+        {
+          "subject_id": 4,
+          "total_mark": 100,
+          "mark_scored": 100,
+          "comments": ""
+        },
+        {
+          "subject_id": 5,
+          "total_mark": 100,
+          "mark_scored": 50,
+          "comments": ""
+        }
+      ]
+    },
+    {
+      "student_id": 4,
+      "total_mark": "500",
+      "total_mark_scored": "200",
+      "status": "pass",
+      "subject_mark": [
+        {
+          "subject_id": 1,
+          "total_mark": 100,
+          "mark_scored": 50,
+          "comments": ""
+        },
+        {
+          "subject_id": 2,
+          "total_mark": 100,
+          "mark_scored": 30,
+          "comments": ""
+        },
+        {
+          "subject_id": 3,
+          "total_mark": 100,
+          "mark_scored": 30,
+          "comments": ""
+        },
+        {
+          "subject_id": 4,
+          "total_mark": 100,
+          "mark_scored": 45,
+          "comments": ""
+        },
+        {
+          "subject_id": 5,
+          "total_mark": 100,
+          "mark_scored": 45,
+          "comments": ""
+        }
+      ]
+    }
+  ]
+}
+Response: 
+{
+    "success": true,
+    "message": "Student academic exam updated successfully"
+}
+
+View api: 
+Url: http://localhost:3000/api/v1/student/academic-exam/view/21
+Method: GET
+Response:
+{
+    "success": true,
+    "data": {
+        "id": 21,
+        "exam_name": "I-term",
+        "exam_start_date": "2025-06-02",
+        "class_id": 1,
+        "section_id": 1,
+        "exam_end_date": "2025-06-06",
+        "is_active": 1,
+        "created_by": 1,
+        "updated_by": 1,
+        "class_name": "1st std",
+        "section_name": "A",
+        "student_detail": [
+            {
+                "id": 55,
+                "academic_exam_id": 21,
+                "student_id": 1,
+                "total_mark": "500",
+                "total_mark_scored": "360",
+                "status": "pass",
+                "is_active": 1,
+                "first_name": "ram",
+                "last_name": null,
+                "class_name": "1st std",
+                "section_name": "A",
+                "mark_details": [
+                    {
+                        "id": 91,
+                        "academic_exam_id": 21,
+                        "academic_exam_student_id": 55,
+                        "subject_id": 1,
+                        "total_mark": "100",
+                        "mark_scored": "50",
+                        "comments": "",
+                        "is_active": 1,
+                        "subject_name": "Tamil"
+                    },
+                    {
+                        "id": 92,
+                        "academic_exam_id": 21,
+                        "academic_exam_student_id": 55,
+                        "subject_id": 2,
+                        "total_mark": "100",
+                        "mark_scored": "100",
+                        "comments": "",
+                        "is_active": 1,
+                        "subject_name": "English"
+                    },
+                    {
+                        "id": 93,
+                        "academic_exam_id": 21,
+                        "academic_exam_student_id": 55,
+                        "subject_id": 3,
+                        "total_mark": "100",
+                        "mark_scored": "50",
+                        "comments": "",
+                        "is_active": 1,
+                        "subject_name": "Maths"
+                    },
+                    {
+                        "id": 94,
+                        "academic_exam_id": 21,
+                        "academic_exam_student_id": 55,
+                        "subject_id": 4,
+                        "total_mark": "100",
+                        "mark_scored": "100",
+                        "comments": "",
+                        "is_active": 1,
+                        "subject_name": "Science"
+                    },
+                    {
+                        "id": 95,
+                        "academic_exam_id": 21,
+                        "academic_exam_student_id": 55,
+                        "subject_id": 5,
+                        "total_mark": "100",
+                        "mark_scored": "60",
+                        "comments": "",
+                        "is_active": 1,
+                        "subject_name": "Social"
+                    }
+                ]
+            },
+            {
+                "id": 56,
+                "academic_exam_id": 21,
+                "student_id": 2,
+                "total_mark": "500",
+                "total_mark_scored": "490",
+                "status": "pass",
+                "is_active": 1,
+                "first_name": "raj",
+                "last_name": null,
+                "class_name": "1st std",
+                "section_name": "A",
+                "mark_details": [
+                    {
+                        "id": 96,
+                        "academic_exam_id": 21,
+                        "academic_exam_student_id": 56,
+                        "subject_id": 1,
+                        "total_mark": "100",
+                        "mark_scored": "100",
+                        "comments": "",
+                        "is_active": 1,
+                        "subject_name": "Tamil"
+                    },
+                    {
+                        "id": 97,
+                        "academic_exam_id": 21,
+                        "academic_exam_student_id": 56,
+                        "subject_id": 2,
+                        "total_mark": "100",
+                        "mark_scored": "100",
+                        "comments": "",
+                        "is_active": 1,
+                        "subject_name": "English"
+                    },
+                    {
+                        "id": 98,
+                        "academic_exam_id": 21,
+                        "academic_exam_student_id": 56,
+                        "subject_id": 3,
+                        "total_mark": "100",
+                        "mark_scored": "100",
+                        "comments": "",
+                        "is_active": 1,
+                        "subject_name": "Maths"
+                    },
+                    {
+                        "id": 99,
+                        "academic_exam_id": 21,
+                        "academic_exam_student_id": 56,
+                        "subject_id": 4,
+                        "total_mark": "100",
+                        "mark_scored": "100",
+                        "comments": "",
+                        "is_active": 1,
+                        "subject_name": "Science"
+                    },
+                    {
+                        "id": 100,
+                        "academic_exam_id": 21,
+                        "academic_exam_student_id": 56,
+                        "subject_id": 5,
+                        "total_mark": "100",
+                        "mark_scored": "90",
+                        "comments": "",
+                        "is_active": 1,
+                        "subject_name": "Social"
+                    }
+                ]
+            },
+            {
+                "id": 57,
+                "academic_exam_id": 21,
+                "student_id": 3,
+                "total_mark": "500",
+                "total_mark_scored": "400",
+                "status": "pass",
+                "is_active": 1,
+                "first_name": "raja",
+                "last_name": null,
+                "class_name": "1st std",
+                "section_name": "A",
+                "mark_details": [
+                    {
+                        "id": 101,
+                        "academic_exam_id": 21,
+                        "academic_exam_student_id": 57,
+                        "subject_id": 1,
+                        "total_mark": "100",
+                        "mark_scored": "100",
+                        "comments": "",
+                        "is_active": 1,
+                        "subject_name": "Tamil"
+                    },
+                    {
+                        "id": 102,
+                        "academic_exam_id": 21,
+                        "academic_exam_student_id": 57,
+                        "subject_id": 2,
+                        "total_mark": "100",
+                        "mark_scored": "50",
+                        "comments": "",
+                        "is_active": 1,
+                        "subject_name": "English"
+                    },
+                    {
+                        "id": 103,
+                        "academic_exam_id": 21,
+                        "academic_exam_student_id": 57,
+                        "subject_id": 3,
+                        "total_mark": "100",
+                        "mark_scored": "100",
+                        "comments": "",
+                        "is_active": 1,
+                        "subject_name": "Maths"
+                    },
+                    {
+                        "id": 104,
+                        "academic_exam_id": 21,
+                        "academic_exam_student_id": 57,
+                        "subject_id": 4,
+                        "total_mark": "100",
+                        "mark_scored": "100",
+                        "comments": "",
+                        "is_active": 1,
+                        "subject_name": "Science"
+                    },
+                    {
+                        "id": 105,
+                        "academic_exam_id": 21,
+                        "academic_exam_student_id": 57,
+                        "subject_id": 5,
+                        "total_mark": "100",
+                        "mark_scored": "50",
+                        "comments": "",
+                        "is_active": 1,
+                        "subject_name": "Social"
+                    }
+                ]
+            },
+            {
+                "id": 58,
+                "academic_exam_id": 21,
+                "student_id": 4,
+                "total_mark": "500",
+                "total_mark_scored": "200",
+                "status": "Fail",
+                "is_active": 1,
+                "first_name": "rj",
+                "last_name": null,
+                "class_name": "1st std",
+                "section_name": "A",
+                "mark_details": [
+                    {
+                        "id": 106,
+                        "academic_exam_id": 21,
+                        "academic_exam_student_id": 58,
+                        "subject_id": 1,
+                        "total_mark": "100",
+                        "mark_scored": "50",
+                        "comments": "",
+                        "is_active": 1,
+                        "subject_name": "Tamil"
+                    },
+                    {
+                        "id": 107,
+                        "academic_exam_id": 21,
+                        "academic_exam_student_id": 58,
+                        "subject_id": 2,
+                        "total_mark": "100",
+                        "mark_scored": "30",
+                        "comments": "",
+                        "is_active": 1,
+                        "subject_name": "English"
+                    },
+                    {
+                        "id": 108,
+                        "academic_exam_id": 21,
+                        "academic_exam_student_id": 58,
+                        "subject_id": 3,
+                        "total_mark": "100",
+                        "mark_scored": "30",
+                        "comments": "",
+                        "is_active": 1,
+                        "subject_name": "Maths"
+                    },
+                    {
+                        "id": 109,
+                        "academic_exam_id": 21,
+                        "academic_exam_student_id": 58,
+                        "subject_id": 4,
+                        "total_mark": "100",
+                        "mark_scored": "45",
+                        "comments": "",
+                        "is_active": 1,
+                        "subject_name": "Science"
+                    },
+                    {
+                        "id": 110,
+                        "academic_exam_id": 21,
+                        "academic_exam_student_id": 58,
+                        "subject_id": 5,
+                        "total_mark": "100",
+                        "mark_scored": "45",
+                        "comments": "",
+                        "is_active": 1,
+                        "subject_name": "Social"
+                    }
+                ]
+            }
+        ],
+        "subject_list": [
+            {
+                "id": 91,
+                "subject_id": 1,
+                "total_mark": "100",
+                "is_active": 1,
+                "subject_name": "Tamil"
+            },
+            {
+                "id": 92,
+                "subject_id": 2,
+                "total_mark": "100",
+                "is_active": 1,
+                "subject_name": "English"
+            },
+            {
+                "id": 93,
+                "subject_id": 3,
+                "total_mark": "100",
+                "is_active": 1,
+                "subject_name": "Maths"
+            },
+            {
+                "id": 94,
+                "subject_id": 4,
+                "total_mark": "100",
+                "is_active": 1,
+                "subject_name": "Science"
+            },
+            {
+                "id": 95,
+                "subject_id": 5,
+                "total_mark": "100",
+                "is_active": 1,
+                "subject_name": "Social"
+            }
+        ]
+    }
+}
+
+Get student 
+Url: http://localhost:3000/api/v1/student/academic-exam/getStudent?class_id=1&section_id=1&academic_exam_id=
+Method: GET
+Response
+{
+    "success": true,
+    "total": 4,
+    "data": [
+        {
+            "id": 1,
+            "first_name": "ram",
+            "last_name": null,
+            "email": "ram@gmail.com",
+            "mobile_number": "9988995520",
+            "is_active": 1,
+            "academic_exam_id": 0,
+            "total_mark": "0",
+            "total_mark_scored": "0",
+            "status": "pass/fail",
+            "created_by": 1,
+            "updated_by": 1,
+            "class_name": "1st std",
+            "section_name": "A"
+        },
+        {
+            "id": 2,
+            "first_name": "raj",
+            "last_name": null,
+            "email": "raj@gmail.com",
+            "mobile_number": "9288995520",
+            "is_active": 1,
+            "academic_exam_id": 0,
+            "total_mark": "0",
+            "total_mark_scored": "0",
+            "status": "pass/fail",
+            "created_by": 1,
+            "updated_by": 1,
+            "class_name": "1st std",
+            "section_name": "A"
+        },
+        {
+            "id": 3,
+            "first_name": "raja",
+            "last_name": null,
+            "email": "raja@gmail.com",
+            "mobile_number": "9888995520",
+            "is_active": 1,
+            "academic_exam_id": 0,
+            "total_mark": "0",
+            "total_mark_scored": "0",
+            "status": "pass/fail",
+            "created_by": 1,
+            "updated_by": 1,
+            "class_name": "1st std",
+            "section_name": "A"
+        },
+        {
+            "id": 4,
+            "first_name": "rj",
+            "last_name": null,
+            "email": "rj@gmail.com",
+            "mobile_number": "9888995550",
+            "is_active": 1,
+            "academic_exam_id": 0,
+            "total_mark": "0",
+            "total_mark_scored": "0",
+            "status": "pass/fail",
+            "created_by": 1,
+            "updated_by": 1,
+            "class_name": "1st std",
+            "section_name": "A"
+        }
+    ]
+}
+
+Class list 
+Url: http://localhost:3000/api/v1/class
+Method: GET
+Response: 
+{
+    "success": true,
+    "total": 5,
+    "data": [
+        {
+            "id": 1,
+            "class_name": "1st std",
+            "class_code": "001",
+            "is_active": 1,
+            "created_by": 1,
+            "updated_by": 1
+        },
+        {
+            "id": 2,
+            "class_name": "2nd std",
+            "class_code": "002",
+            "is_active": 1,
+            "created_by": 1,
+            "updated_by": 1
+        },
+        {
+            "id": 3,
+            "class_name": "3rd std",
+            "class_code": "003",
+            "is_active": 1,
+            "created_by": 1,
+            "updated_by": 1
+        },
+        {
+            "id": 4,
+            "class_name": "4th std",
+            "class_code": "004",
+            "is_active": 1,
+            "created_by": 1,
+            "updated_by": 1
+        },
+        {
+            "id": 5,
+            "class_name": "5th std",
+            "class_code": "005",
+            "is_active": 1,
+            "created_by": 1,
+            "updated_by": 1
+        }
+    ]
+}
+
+Section list api
+Url: http://localhost:3000/api/v1/section
+Method: GET
+Response:
+{
+    "success": true,
+    "total": 3,
+    "data": [
+        {
+            "id": 1,
+            "section_name": "A",
+            "section_code": "001",
+            "is_active": 1,
+            "created_by": 1,
+            "updated_by": 1
+        },
+        {
+            "id": 2,
+            "section_name": "B",
+            "section_code": "002",
+            "is_active": 1,
+            "created_by": 1,
+            "updated_by": 1
+        },
+        {
+            "id": 3,
+            "section_name": "C",
+            "section_code": "003",
+            "is_active": 1,
+            "created_by": 1,
+            "updated_by": 1
+        }
+    ]
+}
+
+Subject list
+Url: http://localhost:3000/api/v1/subject
+Method: Get
+Response:
+{
+    "success": true,
+    "total": 5,
+    "data": [
+        {
+            "id": 1,
+            "subject_name": "Tamil",
+            "subject_code": "001",
+            "is_active": 1,
+            "created_by": 1,
+            "updated_by": 1
+        },
+        {
+            "id": 2,
+            "subject_name": "English",
+            "subject_code": "002",
+            "is_active": 1,
+            "created_by": 1,
+            "updated_by": 1
+        },
+        {
+            "id": 3,
+            "subject_name": "Maths",
+            "subject_code": "003",
+            "is_active": 1,
+            "created_by": 1,
+            "updated_by": 1
+        },
+        {
+            "id": 4,
+            "subject_name": "Science",
+            "subject_code": "004",
+            "is_active": 1,
+            "created_by": 1,
+            "updated_by": 1
+        },
+        {
+            "id": 5,
+            "subject_name": "Social",
+            "subject_code": "005",
+            "is_active": 1,
+            "created_by": 1,
+            "updated_by": 1
+        }
+    ]
+}
